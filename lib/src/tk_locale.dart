@@ -11,7 +11,7 @@ class TKLocale {
 
   bool? _usesMetricSystem;
 
-  static initialize({required String appShort, required FirebaseDatabase firebaseDatabase}) async {
+  static initialize({required String appShort}) async {
     _singleton._usesMetricSystem = await LocalePlus().usesMetricSystem() ?? true;
   }
 
